@@ -1,20 +1,32 @@
+import ProfileSide from "./profileSide";
+import AboutSection from "./sections/AboutSection";
+import ResumeSection from "./sections/ResumeSection";
+import IntroSection from "./sections/IntroSection";
+import ServicesSection from "./sections/ServicesSection";
+import SkillsSection from "./sections/SkillsSection";
+import PricingSection from "./sections/PricingSection";
+
 export default function Hyper() {
     return (
-        <main className="grid grid-cols-7 p-2 text-slate-50">
-            {/* Left here */}
-            <div className="bg-gray-900 col-span-2 p-5 border border-lime-950">
-                <h1>Nex</h1>
-                <button className=" bg-lime-500 w-full p-2">
-                    Hire Me!
-                </button>
-            </div>
+        <main className="bg-gray-950">
+            <div className="grid lg:grid-cols-7 text-slate-50">
+                {/* Left here */}
+                <div className="lg:col-span-2 p-7">
+                    <ProfileSide />
+                </div>
 
-            {/* Right here */}
-            <div className="col-span-5 overflow-y-scroll h-screen">
-                <div className=" h-screen bg-blue-400"></div>
-                <div className=" h-screen bg-blue-500"></div>
-                <div className=" h-screen bg-blue-600"></div>
-                <div className=" h-screen bg-blue-700"></div>
+                {/* Right here */}
+                <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60">
+                    <IntroSection />
+                    <AboutSection />
+                    <ResumeSection />
+                    <ServicesSection />
+                    <SkillsSection />
+                    <PricingSection />
+                    <div className="h-20"></div>
+                    {/* <div className=" h-screen bg-blue-600"></div> */}
+                    {/* <div className=" h-screen bg-blue-700"></div> */}
+                </div>
             </div>
         </main>
     )
