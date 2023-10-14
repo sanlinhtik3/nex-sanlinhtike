@@ -3,7 +3,7 @@ export default function ResumeSection() {
         <>
             <div className="space-y-16">
                 <h6 className="uppercase border p-2 inline-block text-xs">Resume</h6>
-                <h1 className=" text-6xl mb-10 leading-tight">Education and <span className="text-lime-400">Experience</span></h1>
+                <h1 className=" text-6xl mb-10 leading-tight">Education and <span className="text-purple-400">Experience</span></h1>
 
                 <ol className="relative border-l border-gray-200 dark:border-gray-700 space-y-16">
                     <li className="mb-10 ml-6 space-y-5">

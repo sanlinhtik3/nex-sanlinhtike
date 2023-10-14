@@ -8,7 +8,7 @@ import PricingSection from "./sections/PricingSection";
 
 export default function Hyper() {
     return (
-        <main className="bg-gray-950">
+        <main className="bg-[#18191c]">
             <div className="grid lg:grid-cols-7 text-slate-50">
                 {/* Left here */}
                 <div className="lg:col-span-2 p-7">
@@ -16,7 +16,7 @@ export default function Hyper() {
                 </div>
 
                 {/* Right here */}
-                <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60">
+                <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60 scrollbar-hide">
                     <IntroSection />
                     <AboutSection />
                     <ResumeSection />
