@@ -1,14 +1,31 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Noto_Sans, Roboto } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
-const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'],
-  subsets: ['latin']
+const MonaSans = localFont({
+  src: [
+    {
+      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-BoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+  ],
 })
-
-const notosans = Noto_Sans({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -22,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={MonaSans.className}>{children}</body>
     </html>
   )
 }

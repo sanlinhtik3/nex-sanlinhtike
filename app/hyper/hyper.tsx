@@ -8,7 +8,7 @@ import PricingSection from "./sections/PricingSection";
 
 export default function Hyper() {
     return (
-        <main className="bg-[#18191c]">
+        <main className="bg-[#080a11]">
             <div className="grid lg:grid-cols-7 text-slate-50">
                 {/* Left here */}
                 <div className="lg:col-span-2 p-7">

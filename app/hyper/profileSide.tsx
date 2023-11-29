@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 export default function ProfileSide() {
     return (
-        <div className=" bg-[#222429] space-y-5 p-5 text-center max-h-fit h-[calc(100vh-4rem)] rounded-xl">
+        <div className=" bg-[#0d0f18] space-y-5 p-5 text-center max-h-fit h-[calc(100vh-4rem)] rounded-xl">
             <h1 className=" text-3xl font-bold">Nex</h1>
             <div className="">
                 <img src="https://static.mocortech.com/mxc-web-community/static/images/learn/title-image.svg" alt="" />
@@ -11,7 +11,7 @@ export default function ProfileSide() {
             <h6>&copy; 2023. All Rights Reserved</h6>
             <div className="flex gap-3">
                 <Button className="w-full" name="Hire Me!" />
-                <Button className="w-full bg-transparent border-2 border-purple-500" />
+                <Button className="w-full bg-transparent border-2 border-sky-500" />
             </div>
         </div>
 
