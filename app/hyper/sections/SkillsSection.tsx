@@ -1,18 +1,16 @@
 
 import { IconsJS } from "@/app/components/Icons"
+import CircularProgressBar from "@/app/components/circular-progress-bar"
 
 export default function SkillsSection() {
     return (
         <>
             <div className="">
+
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">My Skills</h6>
                 <h1 className=" text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">Advantages</span></h1>
 
-                <p className=" leading-10 text-gray-400 hidden">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
-                </p>
-
-                <div className="space-y-10">
+                {/* <div className="space-y-10">
                     <div className="border border-gray-800 rounded-xl hover:border-sky-500 transition-colors group p-5 space-y-10">
                         <div className="flex items-center gap-5">
                             <div className="">
@@ -22,6 +20,30 @@ export default function SkillsSection() {
                             <h4 className="text-3xl group-hover:text-sky-500">Typescript</h4>
                         </div>
                     </div>
+                </div> */}
+
+                <div className=" border border-slate-900 p-5 mt-10 rounded-2xl">
+                    {/* <h1 className=" mb-5">Conformance</h1> */}
+
+                    <div className=" grid grid-cols-2 gap-5">
+                        <div className=" flex justify-between items-center border border-yellow-400 rounded-2xl p-5">
+                            <h1 className=" text-sm text-yellow-400">JavaScript</h1>
+                            <CircularProgressBar percentage={80} color="#facc15" bg="#fefce8" />
+                        </div>
+                        <div className=" flex justify-between items-center border border-sky-800 rounded-2xl p-5">
+                            <h1 className=" text-sm text-sky-400">React.js</h1>
+                            <CircularProgressBar percentage={70} color="#0284c7" bg="#fefce8" />
+                        </div>
+                        <div className=" flex justify-between items-center border border-sky-800 rounded-2xl p-5">
+                            <h1 className=" text-sm text-sky-400">Tyescript</h1>
+                            <CircularProgressBar percentage={65} color="#0284c7" bg="#fefce8" />
+                        </div>
+                        <div className=" flex justify-between items-center border border-slate-100 rounded-2xl p-5">
+                            <h1 className=" text-sm text-gray-100">Next.js</h1>
+                            <CircularProgressBar percentage={80} color="#fff" bg="#000" />
+                        </div>
+                    </div>
+
                 </div>
 
 

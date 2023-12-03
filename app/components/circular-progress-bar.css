@@ -1,0 +1,25 @@
+.container-circular .progress {
+    background: var(--bg) linear-gradient(to right , transparent 50%, var(--clr) 0)!important;
+}
+
+.container-circular .progress::before {
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.container-circular .progress::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-color: #000
+}
+
+.container-circular .progress::before {
+    background-color: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
