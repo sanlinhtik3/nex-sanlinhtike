@@ -1,6 +1,7 @@
 
 import './globals.css'
 import type { Metadata } from 'next'
+import { Providers } from "./providers";
 import localFont from 'next/font/local'
 
 const MonaSans = localFont({
@@ -40,7 +41,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={MonaSans.className}>{children}</body>
+      <body className={MonaSans.className}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }

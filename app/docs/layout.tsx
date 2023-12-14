@@ -1,8 +1,0 @@
-export default function DocsLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="prose prose-sky">
-            {children}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css"></link>
-        </div>
-    )
-}
