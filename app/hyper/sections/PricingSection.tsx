@@ -1,7 +1,7 @@
 export default function PricingSection() {
     return (
         <>
-            <div className="">
+            <div className=" ">
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">My Pricing</h6>
                 <h1 className=" text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">Advantages</span></h1>
 
@@ -11,7 +11,7 @@ export default function PricingSection() {
 
                 <div className="">
                     <div className="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 ">
-                        <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
+                        <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
                             <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
                             <div className="flex items-baseline my-8">
@@ -42,8 +42,8 @@ export default function PricingSection() {
                             </ul>
                             <a href="#" className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-sky-900">Get started</a>
                         </div>
-                        <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
-                            <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
+                        <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
+                            <h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
                             <div className="flex items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold text-sky-500">$29</span>

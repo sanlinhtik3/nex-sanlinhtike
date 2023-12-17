@@ -1,6 +1,7 @@
 
 import { IconsJS } from "@/app/components/Icons"
 import CircularProgressBar from "@/app/components/circular-progress-bar"
+import { CircularProgress } from "@nextui-org/react"
 
 export default function SkillsSection() {
     return (
@@ -26,27 +27,92 @@ export default function SkillsSection() {
                     {/* <h1 className=" mb-5">Conformance</h1> */}
 
                     <div className=" grid grid-cols-2 gap-5">
-                        <div className=" flex justify-between items-center border border-yellow-400 rounded-2xl p-5">
+                        <div className=" flex justify-between items-center border-2 border-yellow-400 bg-yellow-500 bg-opacity-5 rounded-2xl p-5">
                             <h1 className=" text-sm text-yellow-400">JavaScript</h1>
-                            <CircularProgressBar percentage={80} color="#facc15" bg="#fefce8" />
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-yellow-500",
+                                    track: "stroke-yellow-500/10",
+                                    value: "font-semibold text-yellow-500",
+                                }}
+                                value={80}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
                         </div>
-                        <div className=" flex justify-between items-center border border-sky-800 rounded-2xl p-5">
+                        <div className=" flex justify-between items-center border-2 border-sky-800 bg-sky-500 bg-opacity-5 rounded-2xl p-5">
                             <h1 className=" text-sm text-sky-400">React.js</h1>
-                            <CircularProgressBar percentage={70} color="#0284c7" bg="#fefce8" />
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-sky-500",
+                                    track: "stroke-sky-500/10",
+                                    value: "font-semibold text-sky-500",
+                                }}
+                                value={70}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
                         </div>
-                        <div className=" flex justify-between items-center border border-sky-800 rounded-2xl p-5">
+                        <div className=" flex justify-between items-center border-2 border-sky-800 bg-sky-500 bg-opacity-5 rounded-2xl p-5">
                             <h1 className=" text-sm text-sky-400">Tyescript</h1>
-                            <CircularProgressBar percentage={65} color="#0284c7" bg="#fefce8" />
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-sky-500",
+                                    track: "stroke-sky-500/10",
+                                    value: "font-semibold text-sky-500",
+                                }}
+                                value={75}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
                         </div>
-                        <div className=" flex justify-between items-center border border-slate-100 rounded-2xl p-5">
+                        <div className=" flex justify-between items-center border-2 border-slate-100 bg-slate-500 bg-opacity-5 rounded-2xl p-5">
                             <h1 className=" text-sm text-gray-100">Next.js</h1>
-                            <CircularProgressBar percentage={80} color="#fff" bg="#000" />
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-white",
+                                    track: "stroke-white/10",
+                                    value: "font-semibold text-white",
+                                }}
+                                value={80}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
+                        </div>
+                        <div className=" flex justify-between items-center border-2 border-green-500 bg-green-500 bg-opacity-5 rounded-2xl p-5">
+                            <h1 className=" text-sm text-green-500">MongoDB</h1>
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-green-500",
+                                    track: "stroke-green-500/10",
+                                    value: "font-semibold text-green-500",
+                                }}
+                                value={60}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
+                        </div>
+                        <div className=" flex justify-between items-center border-2 border-pink-500 bg-pink-500 bg-opacity-5 rounded-2xl p-5">
+                            <h1 className=" text-sm text-pink-500">Figma</h1>
+                            <CircularProgress
+                                classNames={{
+                                    svg: "w-14 h-14 drop-shadow-md",
+                                    indicator: "stroke-pink-500",
+                                    track: "stroke-pink-500/10",
+                                    value: "font-semibold text-pink-500",
+                                }}
+                                value={90}
+                                strokeWidth={0}
+                                showValueLabel={true}
+                            />
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </>
     )
