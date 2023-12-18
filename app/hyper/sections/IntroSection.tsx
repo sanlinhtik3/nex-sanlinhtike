@@ -1,4 +1,5 @@
 import Button from "@/app/components/Button"
+import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo"
 import Link from "next/link"
 
 export default function IntroSection() {
@@ -37,16 +38,17 @@ function IntroSectionUI1() {
                 <h1 className="text-8xl leading-tight font-bold uppercase">Learn Now, Apply <span className=" text-sky-500">Future</span></h1>
 
                 <p className=" leading-10 text-gray-400 mb-10 max-w-xl text-2xl">
-                    ဖြစ်နိုင်ပါတယ်ဆိုတဲ့အရာတွေက တကယ်တော့ မင်းသေအောင်ကြိုးစားလည်းမဖြစ်ဘူး။ အဲ့တာတွေက မင်းကို ကြိုးစားချင်အောင် ပြောပြတာပဲ့ရှိတာ။ မင်းရဲ့ကံကြောင့်ဆိုင်တယ်။ ကံသည်အလုပ်။ မင်းကောင်းတာလုပ်ရင် ကောင်းတာဖြစ်မယ်။
+                    အချိန်တိုတိုဖြင့် ပိုမိုထိရောက်တဲ့ Web App တစ်ခုတည်ဆောက်မလား? ဒါမှမဟုတ် မိမိသား သမီး/လူငယ်များ အတွက် <span className=" text-gray-100">Web Development</span> ဖြင့် အသက်မွေးဝမ်းကြောင်းကို ပို့ဆောင်ပေးမလား? Ready to let's go?
                 </p>
 
                 <div className="flex gap-5 mb-10">
                     <Link href={"https://drive.google.com/file/d/1oU2Hatb-xP89gL4zEsLzA6Gf7e9b7dxK/view?usp=sharing"} className=" inline-block" target="_blank">
                         <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
                     </Link>
-                    <Link href={"https://fb.com/sanlinhtik5"} className=" inline-block" target="_blank">
+                    <DropdownMenuDemo />
+                    {/* <Link href={"https://fb.com/sanlinhtik5"} className=" inline-block" target="_blank">
                         <Button className="w-full bg-transparent border-2 border-sky-500" />
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-10 rounded-xl">
