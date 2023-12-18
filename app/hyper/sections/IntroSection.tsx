@@ -7,10 +7,10 @@ export default function IntroSection() {
         <>
             <div className="hidden">
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs">Introduced</h6>
-                <h1 className=" text-6xl mb-10 leading-tight font-bold">Say Hi to Nex, Framer Designer and Developer</h1>
+                <h1 className=" text-6xl mb-10 leading-tight font-bold">Say Hi to Nex&rsquo; Framer Designer and Developer</h1>
 
                 <p className=" leading-10 text-gray-400">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
+                    Lorem ipsum dolor sit&rsquo; amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
                 </p>
 
                 <div className="flex gap-20 mt-20">

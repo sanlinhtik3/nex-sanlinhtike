@@ -8,8 +8,10 @@ export default function PricingSection() {
                 <h1 className=" text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">Pricing</span></h1>
 
                 <p className=" leading-10 text-gray-400 hidden">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
+                    Lorem ipsum dolor sit&rsquo; amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
                 </p>
+
+
 
                 <div className="">
                     <div className="grid md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 ">
@@ -27,11 +29,11 @@ export default function PricingSection() {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Design with Figma, Framer</span>
+                                    <span>Design with Figma&rsquo; Framer</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Implement with React, Tailwindcss, Next.js</span>
+                                    <span>Implement with React&rsquo; Tailwindcss&rsquo; Next.js</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
@@ -39,7 +41,7 @@ export default function PricingSection() {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Work in Business day, no weekend</span>
+                                    <span>Work in Business day&rsquo; no weekend</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
@@ -62,15 +64,15 @@ export default function PricingSection() {
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Don't need wireframe or anything</span>
+                                    <span>Don&apos;t need wireframe or anything</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Design with Figma, Framer from sracth</span>
+                                    <span>Design with Figma&rsquo; Framer from sracth</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>Implement with React, Tailwindcss, Next.js</span>
+                                    <span>Implement with React&rsquo; Tailwindcss&rsquo; Next.js</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <svg className="flex-shrink-0 w-5 h-5 text-sky-500 dark:text-sky-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
