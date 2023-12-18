@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PricingSection() {
     return (
         <>
@@ -48,7 +50,7 @@ export default function PricingSection() {
                                     <span>Free updates: <span className="font-semibold">6 months</span></span>
                                 </li>
                             </ul>
-                            <a href="#" className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-sky-900">Get started</a>
+                            <Link href="#" className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-sky-900">Get started</Link>
                         </div>
                         <div className="flex flex-col p-6 mx-auto w-full text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
                             <h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
@@ -91,7 +93,7 @@ export default function PricingSection() {
                                     <span>Support 5 months</span>
                                 </li>
                             </ul>
-                            <a href="#" className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-sky-900">Get started</a>
+                            <Link href="#" className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-sky-900">Get started</Link>
                         </div>
                     </div>
                 </div>

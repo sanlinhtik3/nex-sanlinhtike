@@ -22,10 +22,8 @@ export default function Hyper() {
                     <ResumeSection />
                     <ServicesSection />
                     <SkillsSection />
-                    <PricingSection />
+                    {/* <PricingSection /> */}
                     <div className="h-20"></div>
-                    {/* <div className=" h-screen bg-blue-600"></div> */}
-                    {/* <div className=" h-screen bg-blue-700"></div> */}
                 </div>
             </div>
         </main>

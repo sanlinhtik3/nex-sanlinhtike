@@ -46,9 +46,6 @@ function IntroSectionUI1() {
                         <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
                     </Link>
                     <DropdownMenuDemo />
-                    {/* <Link href={"https://fb.com/sanlinhtik5"} className=" inline-block" target="_blank">
-                        <Button className="w-full bg-transparent border-2 border-sky-500" />
-                    </Link> */}
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-10 rounded-xl">
@@ -63,7 +60,6 @@ function IntroSectionUI1() {
                         <p className="text-gray-400 text-sm">Utilise, Flexibility, Scalability ,Compatibility </p>
                     </div>
                 </div>
-
             </div>
         </>
     )
