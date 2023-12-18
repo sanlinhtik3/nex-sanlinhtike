@@ -35,9 +35,9 @@ function IntroSectionUI1() {
         <>
             <div className="!mt-10">
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">Introduced</h6>
-                <h1 className="text-8xl leading-tight font-bold uppercase">Learn Now&rsquo; Apply <span className=" text-sky-500">Future</span></h1>
+                <h1 className="text-6xl lg:text-8xl leading-tight font-bold uppercase">Learn Now&rsquo; Apply <span className=" text-sky-500">Future</span></h1>
 
-                <p className=" leading-10 text-gray-400 mb-10 max-w-xl text-2xl">
+                <p className=" leading-10 text-gray-400 mb-10 max-w-lg text-2xl">
                     အချိန်တိုတိုဖြင့် ပိုမိုထိရောက်တဲ့ Web App တစ်ခုတည်ဆောက်မလား? ဒါမှမဟုတ် မိမိသား သမီး/လူငယ်များ အတွက် <span className=" text-gray-100">Web Development</span> ဖြင့် အသက်မွေးဝမ်းကြောင်းကို ပို့ဆောင်ပေးမလား? Ready to let&apos;s go?
                 </p>
 

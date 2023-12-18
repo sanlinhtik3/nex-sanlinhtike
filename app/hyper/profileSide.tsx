@@ -23,7 +23,7 @@ export default function ProfileSide() {
                 <h2 className=" text-gray-400">UI/UX Coding/Graphic Designer</h2>
             </div>
             <h6 className=" text-gray-400">&copy; 2023. All Rights Reserved</h6>
-            <div className="flex gap-3">
+            <div className="flex flex-col  gap-3">
                 <Link href={"https://www.linkedin.com/in/sanlinhtike/"} className=" inline-block w-full" target="_blank">
                     <Button className="w-full whitespace-nowrap" name="Hire Me!" />
                 </Link>

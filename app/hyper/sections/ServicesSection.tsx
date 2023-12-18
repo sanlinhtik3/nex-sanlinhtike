@@ -19,7 +19,7 @@ export default function ServicesSection() {
         <>
             <div className="">
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">Services</h6>
-                <h1 className=" text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">specializations</span></h1>
+                <h1 className=" text-4xl lg:text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">specializations</span></h1>
 
                 <p className=" leading-10 text-gray-400 hidden">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt

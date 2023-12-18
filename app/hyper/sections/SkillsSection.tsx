@@ -8,10 +8,10 @@ export default function SkillsSection() {
             <div className="">
 
                 <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">Skills</h6>
-                <h1 className=" text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">My Skills</span></h1>
+                <h1 className=" text-4xl lg:text-6xl mb-10 leading-tight font-bold">My <span className="text-sky-500">My Skills</span></h1>
 
                 <div className=" border border-slate-900 p-5 mt-10 rounded-2xl">
-                    <div className=" grid grid-cols-2 gap-5">
+                    <div className=" grid lg:grid-cols-2 gap-5">
                         <HoverCardDemo
                             name="JavaScript"
                             logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
