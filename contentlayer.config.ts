@@ -33,6 +33,6 @@ export default makeSource({
     documentTypes: [Post],
     mdx: {
         remarkPlugins: [remarkGfm],
-        rehypePlugins: [highlight],
+        rehypePlugins: [],
     },
 });
