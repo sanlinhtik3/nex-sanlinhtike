@@ -8,8 +8,8 @@ export default function ProfileSide() {
         <div className=" lg:bg-[#0d0f18] space-y-5 p-5 text-center max-h-fit lg:h-[calc(100vh-4rem)] !rounded-xl">
             <div className=" relative">
                 <Avatar
-                    src="/sanlinhtike.JPG"
-                    className="w-60 h-60 text-large mx-auto border-4 border-sky-500 object-fill "
+                    src="/sanlinhtike.png"
+                    className="w-60 h-60 text-large mx-auto  object-fill "
                 />
                 <span className=" absolute  bottom-5 lg:bottom-2 right-36 lg:right-14 md:right-8 bg-green-100 text-green-500 rounded-full px-2 flex justify-center items-center gap-1">
                     <div className=" h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
