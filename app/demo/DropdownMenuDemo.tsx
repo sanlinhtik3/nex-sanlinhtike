@@ -45,7 +45,7 @@ export function DropdownMenuDemo() {
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <Facebook className="mr-2 h-4 w-4" />
-                        <Link href={"https://fb.com/sanlinhtik5"}>Facebook</Link>
+                        <Link href={"https://fb.com/5anlinhtike"}>Facebook</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                         <Send className="mr-2 h-4 w-4" />

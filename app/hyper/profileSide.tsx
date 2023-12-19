@@ -27,7 +27,7 @@ export default function ProfileSide() {
                 <Link href={"https://www.linkedin.com/in/sanlinhtike/"} className=" inline-block w-full" target="_blank">
                     <Button className="w-full whitespace-nowrap" name="Hire Me!" />
                 </Link>
-                <Link href={"https://fb.com/sanlinhtik5"} className=" inline-block w-full" target="_blank">
+                <Link href={"https://fb.com/5anlinhtike"} className=" inline-block w-full" target="_blank">
                     <Button className="w-full bg-transparent border-2 border-sky-500 whitespace-nowrap" />
                 </Link>
             </div>
