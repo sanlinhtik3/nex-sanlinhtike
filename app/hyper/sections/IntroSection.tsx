@@ -13,7 +13,7 @@ export default function IntroSection() {
                     အချိန်တိုတိုဖြင့် ပိုမိုထိရောက်တဲ့ Web App တစ်ခုတည်ဆောက်မလား? ဒါမှမဟုတ် မိမိသား သမီး/လူငယ်များ အတွက် <span className=" text-gray-100">Web Development</span> ဖြင့် အသက်မွေးဝမ်းကြောင်းကို ပို့ဆောင်ပေးမလား? Ready to let&apos;s go?
                 </p>
 
-                <div className="flex gap-5 mb-10">
+                <div className="flex flex-col lg:flex-row gap-5 mb-10">
                     <Link href={"https://drive.google.com/file/d/1oU2Hatb-xP89gL4zEsLzA6Gf7e9b7dxK/view?usp=sharing"} className=" inline-block" target="_blank">
                         <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
                     </Link>
