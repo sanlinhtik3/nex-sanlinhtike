@@ -12,7 +12,6 @@ export default function PricingSection() {
                 </p>
 
 
-
                 <div className="">
                     <div className="grid md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 gap-y-10">
                         <div className="flex flex-col p-6 mx-auto w-full text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">

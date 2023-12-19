@@ -3,34 +3,7 @@ import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo"
 import Link from "next/link"
 
 export default function IntroSection() {
-    return (
-        <>
-            <div className="hidden">
-                <h6 className="uppercase border p-2 inline-block mb-20 text-xs">Introduced</h6>
-                <h1 className=" text-6xl mb-10 leading-tight font-bold">Say Hi to Nex&rsquo; Framer Designer and Developer</h1>
-
-                <p className=" leading-10 text-gray-400">
-                    Lorem ipsum dolor sit&rsquo; amet consectetur adipisicing elit. Accusantium animi quia earum! Praesentium omnis nostrum incidunt
-                </p>
-
-                <div className="flex gap-20 mt-20">
-                    <div className=" space-y-5">
-                        <h6 className=" text-6xl text-sky-400">10+</h6>
-                        <p className="text-gray-400">Years <br /> of Experience</p>
-                    </div>
-
-                    <div className="space-y-5">
-                        <h6 className=" text-6xl text-sky-400">10+</h6>
-                        <p className="text-gray-400">Projects <br /> completed</p>
-                    </div>
-                </div>
-            </div>
-            <IntroSectionUI1 />
-        </>
-    )
-}
-
-function IntroSectionUI1() {
+    console.log('Hello')
     return (
         <>
             <div className="!mt-10">
@@ -48,7 +21,7 @@ function IntroSectionUI1() {
                     <DropdownMenuDemo />
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-10 rounded-xl">
+                <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-5 lg:p-10 rounded-xl mb-10">
                     <div className="">
                         <h6 className=" text-6xl text-sky-500 font-bold">5+</h6>
                         <h6 className="text-lg font-bold">Years of Experience</h6>
@@ -59,6 +32,24 @@ function IntroSectionUI1() {
                         <h6 className="text-lg font-bold">Projects completed</h6>
                         <p className="text-gray-400 text-sm">Utilise, Flexibility, Scalability ,Compatibility </p>
                     </div>
+                </div>
+
+                <div className="bg-[#0d0e18] p-5 lg:p-10 rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <h1 className=" lg:col-span-2 text-3xl lg:text-4xl font-bold">Learn</h1>
+                    <Link href={"https://learn-sanlinhtike.vercel.app/"} className="space-y-5 bg-gray-950 p-3 rounded-2xl hover:bg-gray-900 transform transition-colors duration-200">
+                        <h1 className=" text-3xl lg:text-4xl font-medium">Learn With Online Book</h1>
+                        <h1>Learn Your Career Path</h1>
+                        <p className="text-gray-400">
+                            <span className=" text-white">Web Development</span> ကို အချိန်တိုတိုနှင့် စနစ်တကျလေ့လာချင်သူများအတွက် ဒီ Learn Page ကို develope လုပ်ထားခြစ်တယ်။ JavaScript, Git, Github, Tailwindcss, React, Next.js သင်ခန်းစာများကို Online Learn Book စနစ်ဖြင့် လေ့လာရမှာပါ။ Click ပြီးလေ့လာကြည့်ပါ။
+                        </p>
+                    </Link>
+                    <Link href={"https://www.youtube.com/@SanLinHtike"} className=" space-y-5 bg-gray-950 p-3 rounded-2xl hover:bg-gray-900 transform transition-colors duration-200">
+                        <h1 className=" text-3xl lg:text-4xl font-medium">Learn on YouTube</h1>
+                        <h1>Learn Your Career Path</h1>
+                        <p className="text-gray-400">
+                            <span className=" text-white">HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React</span> စတဲ့သင်ခန်းစာများကို Newly on Expert ဖြစ်အောင် ဒီ YouTube Channel က မိတ်ဆွေတို့ကို ကူညီပေးပါလိမ့်မယ်။ အပြင်မှာ သင်တန်းတက်တဲ့အတိုင်းလေ့လာရမှာဖြစ်ပြီး Up to Date ဖြစ်တဲ့ Library, Framework Version ဖြစ့်လေ့လာရမှာပါ။
+                        </p>
+                    </Link>
                 </div>
             </div>
         </>
