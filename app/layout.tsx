@@ -2,33 +2,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from "./providers";
-import localFont from 'next/font/local'
 import Head from 'next/head';
-
-const MonaSans = localFont({
-  src: [
-    {
-      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Italic.woff2',
-      weight: '400',
-      style: 'italic',
-    },
-    {
-      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: './assets/fonts/MonaSans/WOFF 2/MonaSans-BoldItalic.woff2',
-      weight: '700',
-      style: 'italic',
-    },
-  ],
-})
+import { mona_sans } from './fonts';
 
 export const metadata: Metadata = {
   title: 'San Lin Htike Portfolio',
@@ -43,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={MonaSans.className}>
+      <body className={`${mona_sans.className}`}>
         <Head>
           <title>San Lin Htike Portfolio</title>
           <meta property="og:title" content="San Lin Htike Portfolio" key="title" />

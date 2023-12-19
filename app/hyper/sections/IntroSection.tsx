@@ -3,7 +3,6 @@ import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo"
 import Link from "next/link"
 
 export default function IntroSection() {
-    console.log('Hello')
     return (
         <>
             <div className="!mt-10">
