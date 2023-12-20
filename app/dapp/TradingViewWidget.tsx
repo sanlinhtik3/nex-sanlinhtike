@@ -5,7 +5,6 @@ import { StockMarket } from "react-ts-tradingview-widgets";
 import { CryptoCurrencyMarket } from "react-ts-tradingview-widgets";
 
 
-
 import dynamic from "next/dynamic";
 const SymbolOverviewNoSSR = dynamic(
     () => import("react-ts-tradingview-widgets").then((w) => w.SymbolOverview),
@@ -25,7 +24,7 @@ function TradingViewWidget() {
                 </div>
 
                 <div className="">
-                    <TechnicalAnalysis colorTheme="dark" width="100%" height={400}></TechnicalAnalysis>
+                    <TechnicalAnalysis colorTheme="dark" width="100%" height={400} symbol="BTC"></TechnicalAnalysis>
                 </div>
             </div>
 

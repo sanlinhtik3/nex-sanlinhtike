@@ -8,6 +8,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import Link from "next/link"
 
 export function DialogDemo() {
     return (
@@ -15,7 +16,7 @@ export function DialogDemo() {
             <DialogTrigger asChild>
                 <Button>Click Buy/Sell</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
+            <DialogContent>
                 <DialogHeader>
                     <DialogTitle>Click Buy/Sell</DialogTitle>
                     <DialogDescription>
@@ -24,8 +25,12 @@ export function DialogDemo() {
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
                     <div className="grid grid-cols-4 items-center gap-4">
-                        <Button> Messenger</Button>
-                        <Button>Telegram</Button>
+                        <Link href="https://fb.com/5anlinhtike" target="_blank">
+                            <Button> Messenger</Button>
+                        </Link>
+                        <Link href="https://t.me/barryhtike" target="_blank">
+                            <Button>Telegram</Button>
+                        </Link>
                     </div>
                 </div>
             </DialogContent>
