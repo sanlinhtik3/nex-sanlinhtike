@@ -14,7 +14,7 @@ export default function PricingSection() {
 
                 <div className="">
                     <div className="grid md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 gap-y-10">
-                        <div className=" col-span-2 flex flex-col p-6 mx-auto w-full text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
+                        <div className=" lg:col-span-2 flex flex-col p-6 mx-auto w-full text-gray-300  border border-gray-800 rounded-xl shadow dark:border-gray-600 xl:p-8  dark:text-white hover:border-sky-500">
                             <h3 className="mb-4 text-2xl font-semibold">Buy Online Course Book</h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                                 Web Development နှင့်ပတ်သက်တဲ့ သင်ခန်းစာများ၊ Topic, Lession များကို အသေးစိတ်လေ့လာရမှာဖြစ််ပြီး Online Course Book တစ်ခုလုံးကိုမှာ 1.99 USDT ဖြစ်ပြီး မြန်မာငွေ 7,000 MMK ကျသင့်မှာဖြစ်ပါတယ်။ သင်ခန်းစာများသည် Web Development ကို တီးမိခေါက်မိရှိသူများအတွက် လုပ်ငန်းခွင်ဝင်နိုင်ဖို့အထိ ရည်ရွယ်ပြီး ခုမှလေ့လာမည့်သူများက HTML, CSS လို Basic သင်ခန်းစားကို အရင်လေ့လာရမှာဖြစ်ပါတယ်။ အဲ့ဒီသင်ခန်းစာများအတွက် ၁၀ ရက်လောက်ကြာနိုင်မှာဖြစ်ပြီး <Link href={"https://www.youtube.com/sanlinhtike"} className=" underline text-sky-500">ဒီမှာ</Link> လေ့လာနိုင်ပါတယ်။ စာအုပ်မှာ အသေးစိတ် Detail ကို အချိန်တိုတိုနဲ့ နားလည်လွယ်အောင်ရှင်းပြထားတာဖြစ်ပြီး ဝယ်ယူလိုပါက <Link href={"https://m.me/inficreax"} className=" underline text-sky-500">ဒီလင့်</Link> ကို Click ကာ ဝယ်ယူနိုင်ပါတယ်။
