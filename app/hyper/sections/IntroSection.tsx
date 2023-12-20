@@ -18,6 +18,7 @@ export default function IntroSection() {
                         <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
                     </Link>
                     <DropdownMenuDemo />
+                    
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-5 lg:p-10 rounded-xl mb-10">

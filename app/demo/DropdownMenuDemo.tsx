@@ -29,7 +29,7 @@ export function DropdownMenuDemo() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild className=" h-auto">
-                <Button variant="outline" className=" bg-black border-sky-500 text-sky-500 inline-block hover:bg-sky-950 hover:text-sky-600 px-10 rounded-2xl">Call Now</Button>
+                <Button variant="outline" className=" bg-black border-sky-500 text-sky-500 inline-block hover:bg-sky-950 hover:text-sky-600 px-10 rounded-2xl">Contact</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 bg-black text-white border-gray-700">
                 <DropdownMenuLabel>Contact</DropdownMenuLabel>

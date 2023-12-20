@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Avatar } from "@nextui-org/react";
+import { Button as TButton } from "@/components/ui/button";
 import Button from "../components/Button";
+
 
 
 export default function ProfileSide() {
@@ -26,6 +28,9 @@ export default function ProfileSide() {
             <div className="flex flex-col  gap-3">
                 <Link href={"https://www.linkedin.com/in/sanlinhtike/"} className=" inline-block w-full" target="_blank">
                     <Button className="w-full whitespace-nowrap" name="Hire Me!" />
+                </Link>
+                <Link href={"/dapp"} className=" inline-block" target="_blank">
+                    <TButton className="w-full py-6 rounded-xl"><span className=" text-green-500 mr-1">Buy</span>/ <span className=" text-red-500 ml-1 mr-2">Sell </span> Crypto</TButton>
                 </Link>
                 <Link href={"https://fb.com/5anlinhtike"} className=" inline-block w-full" target="_blank">
                     <Button className="w-full bg-transparent border-2 border-sky-500 whitespace-nowrap" />

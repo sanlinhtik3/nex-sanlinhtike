@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Providers } from "./providers";
 import Head from 'next/head';
 import { mona_sans } from './fonts';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: 'San Lin Htike Portfolio',
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${mona_sans.className}`}>
         <Head>
           <title>San Lin Htike Portfolio</title>
@@ -35,9 +36,17 @@ export default function RootLayout({
           <meta name="twitter:image:height" content="630" />
 
         </Head>
-        <Providers>
-          {children}
-        </Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+
+          <Providers>
+            {children}
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )
