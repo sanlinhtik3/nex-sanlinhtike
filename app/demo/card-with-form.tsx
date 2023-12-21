@@ -25,7 +25,7 @@ export function CardWithForm() {
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="name">Circulating supply</Label>
                         <CardDescription>1,231 USDT</CardDescription>
-                        <ProgressDemo percentage={10} />
+                        <ProgressDemo percentage={80} />
                     </div>
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="name">Max supply</Label>
