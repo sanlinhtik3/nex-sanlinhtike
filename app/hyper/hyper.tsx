@@ -5,7 +5,7 @@ import IntroSection from "./sections/IntroSection";
 import ServicesSection from "./sections/ServicesSection";
 import SkillsSection from "./sections/SkillsSection";
 import PricingSection from "./sections/PricingSection";
-import Cryptocurrency from "./sections/CryptoCurrency";
+import Cryptocurrency from "./sections/Cryptocurrency";
 
 export default function Hyper() {
     return (
