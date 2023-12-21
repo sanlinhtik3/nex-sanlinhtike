@@ -5,6 +5,7 @@ import IntroSection from "./sections/IntroSection";
 import ServicesSection from "./sections/ServicesSection";
 import SkillsSection from "./sections/SkillsSection";
 import PricingSection from "./sections/PricingSection";
+import Cryptocurrency from "./sections/CryptoCurrency";
 
 export default function Hyper() {
     return (
@@ -22,6 +23,7 @@ export default function Hyper() {
                     <ResumeSection />
                     <ServicesSection />
                     <SkillsSection />
+                    <Cryptocurrency />
                     <PricingSection />
                     <div className="h-20"></div>
                 </div>
