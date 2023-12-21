@@ -9,6 +9,8 @@ import { ModeToggle } from './mode-toggle';
 import { Badge } from "@/components/ui/badge"
 import { DialogDemo } from './DialogDemo';
 import TradingViewWidget from './TradingViewWidget';
+import { DataTableDemo } from '../demo/data-table-demo';
+import { CardWithForm } from '../demo/card-with-form';
 
 
 const Page = () => {
@@ -57,6 +59,14 @@ const Page = () => {
                 <p className=''>
                     <span>Crypto</span> နှင့်ပတ်သက်ပြီးတော့ ရောင်း/ဝယ်မှုများကို ယုံကြည်စိတ်ချစွာ ပြုလုပ်နိုင်ပါတယ်။
                 </p>
+            </div>
+
+            <div className="mt-10">
+                <CardWithForm />
+            </div>
+
+            <div className="">
+                <DataTableDemo />
             </div>
 
             <div className="">

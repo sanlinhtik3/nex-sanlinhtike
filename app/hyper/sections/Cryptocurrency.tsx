@@ -17,8 +17,6 @@ export default function Cryptocurrency() {
                         <span className=" text-green-500 mr-1">Buy</span>/ <span className=" text-red-500 ml-1 mr-2">Sell </span> Crypto
                     </Button>
                 </Link>
-
-
             </div>
         </>
     )
