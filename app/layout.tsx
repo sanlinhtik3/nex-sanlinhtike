@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import Head from 'next/head';
 import { mona_sans } from './fonts';
 import { ThemeProvider } from '@/components/theme-provider';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'San Lin Htike Portfolio',
@@ -47,6 +48,19 @@ export default function RootLayout({
             {children}
           </Providers>
         </ThemeProvider>
+
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQYS42MPDR"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZQYS42MPDR');
+          `}
+        </Script>
+
       </body>
     </html>
   )
