@@ -6,6 +6,7 @@ import ServicesSection from "./sections/ServicesSection";
 import SkillsSection from "./sections/SkillsSection";
 import PricingSection from "./sections/PricingSection";
 import Cryptocurrency from "./sections/Cryptocurrency";
+import DesignPackageSection from "./sections/DesignPackageSection";
 
 export default function Hyper() {
     return (
@@ -24,6 +25,7 @@ export default function Hyper() {
                     <ServicesSection />
                     <SkillsSection />
                     <Cryptocurrency />
+                    <DesignPackageSection />
                     <PricingSection />
                     <div className="h-20"></div>
                 </div>
