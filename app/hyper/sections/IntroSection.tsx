@@ -1,5 +1,6 @@
 import Button from "@/app/components/Button"
 import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo"
+import { TabsDemo } from "@/app/demo/tabs-demo"
 import Link from "next/link"
 
 export default function IntroSection() {
@@ -18,7 +19,7 @@ export default function IntroSection() {
                         <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
                     </Link>
                     <DropdownMenuDemo />
-                    
+
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-5 lg:p-10 rounded-xl mb-10">
@@ -50,6 +51,9 @@ export default function IntroSection() {
                             <span className=" text-white">HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React</span> စတဲ့သင်ခန်းစာများကို Newly on Expert ဖြစ်အောင် ဒီ YouTube Channel က မိတ်ဆွေတို့ကို ကူညီပေးပါလိမ့်မယ်။ အပြင်မှာ သင်တန်းတက်တဲ့အတိုင်းလေ့လာရမှာဖြစ်ပြီး Up to Date ဖြစ်တဲ့ Library, Framework Version ဖြစ့်လေ့လာရမှာပါ။
                         </p>
                     </Link>
+                    <div className="lg:col-span-2">
+                        <TabsDemo />
+                    </div>
                 </div>
             </div>
         </>
