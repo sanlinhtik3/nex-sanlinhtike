@@ -32,19 +32,7 @@ const notifications = [
     },
 ]
 
-type CardProps = React.ComponentProps<typeof Card>
-
-
-// interface Post {
-//     // id: string;
-//     // name: string;
-//     // title: string;
-//     // date: string;
-//     // tags: string[];
-//     // content: string;
-// }
-
-export default function Home({ className, ...props }: CardProps) {
+export default function Page() {
 
     return (
         <div className='max-w-7xl mx-auto pt-5'>
@@ -62,7 +50,7 @@ export default function Home({ className, ...props }: CardProps) {
             {/* </div>
             ))} */}
 
-            <Card className={cn("max-w-[580px]", className)} {...props}>
+            <Card className={cn("max-w-[580px]")}>
                 <CardHeader>
                     <CardTitle>
                         Figma - Batch: 10
