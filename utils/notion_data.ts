@@ -1,7 +1,7 @@
 import { domain } from "@/app/domain";
 
 async function getData() {
-  const res = await fetch(`${domain}/api/notion`);
+  const res = await fetch(`/api/notion`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 

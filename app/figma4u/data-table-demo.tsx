@@ -188,7 +188,7 @@ export function DataTable() {
 
     // notion data
     async function getData() {
-        const res = await fetch(`${domain}/api/notion`, {
+        const res = await fetch(`/api/notion`, {
             cache: 'no-store'
         })
         // The return value is *not* serialized
