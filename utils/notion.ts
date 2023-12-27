@@ -2,12 +2,9 @@ import { Client } from "@notionhq/client";
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 export async function getBlogPosts() {
-  const databaseId: any = process.env.NOTION_DATABASE_ID;
-  // if (databaseId === undefined) {
-  //     throw new Error("Database ID is undefined");
-  // }
+//   const databaseId: any = process.env.NOTION_DATABASE_ID;
   const response = await notion.databases.query({
-    database_id: databaseId,
+    database_id: process.env.NOTION_DATABASE_ID!,
   });
 
   return response.results.map((page: any) => ({
