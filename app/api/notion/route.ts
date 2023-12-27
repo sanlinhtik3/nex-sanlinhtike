@@ -1,7 +1,7 @@
 import { getBlogPosts } from "@/utils/notion";
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest, res: NextResponse) {
     const posts = await getBlogPosts();
-    return Response.json(posts);
+    return NextResponse.json(posts);
 }
