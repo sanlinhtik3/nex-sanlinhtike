@@ -6,7 +6,7 @@ import rehypeHighlight from 'rehype-highlight'
 // import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import createMDX from '@next/mdx'
-import { withContentlayer } from 'next-contentlayer'
+// import { withContentlayer } from 'next-contentlayer'
 
 
 /** @type {import('next').NextConfig} */
