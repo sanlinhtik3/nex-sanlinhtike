@@ -51,6 +51,8 @@ export type Payment = {
     to: string
 }
 
+export const dynamic = 'force-dynamic'
+
 export const columns: ColumnDef<Payment>[] = [
     // {
     //     id: "select",
