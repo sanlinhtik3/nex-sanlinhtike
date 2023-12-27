@@ -39,6 +39,8 @@ const withMDX = createMDX({
     // },
 })
 
+export default nextConfig;
+
 // Merge MDX config with Next.js config
 // export default withMDX(nextConfig)
-export default withContentlayer(nextConfig)
+// export default withContentlayer(nextConfig)
