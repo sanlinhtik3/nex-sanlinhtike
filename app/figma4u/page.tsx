@@ -44,7 +44,7 @@ type CardProps = React.ComponentProps<typeof Card>
 //     // content: string;
 // }
 
-export default async function Home({ className, ...props }: CardProps) {
+export default function Home({ className, ...props }: CardProps) {
 
     return (
         <div className='max-w-7xl mx-auto pt-5'>
