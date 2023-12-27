@@ -15,6 +15,16 @@ const nextConfig = {
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     reactStrictMode: true,
     swcMinify: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'upload.wikimedia.org',
+                port: '',
+                pathname: '/**',
+            },
+        ],
+    },
     // Optionally, add any other Next.js config below
 }
 

@@ -7,6 +7,7 @@ import SkillsSection from "./sections/SkillsSection";
 import PricingSection from "./sections/PricingSection";
 import Cryptocurrency from "./sections/Cryptocurrency";
 import DesignPackageSection from "./sections/DesignPackageSection";
+import Free4U from "./sections/free4u";
 
 export default function Hyper() {
     return (
@@ -21,6 +22,7 @@ export default function Hyper() {
                 <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60 scrollbar-hide">
                     <IntroSection />
                     <AboutSection />
+                    <Free4U />
                     <ResumeSection />
                     <ServicesSection />
                     <SkillsSection />
