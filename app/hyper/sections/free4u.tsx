@@ -17,7 +17,7 @@ export default function Free4U() {
                     <h1 className="leading-tight text-2xl">Abaiable</h1>
 
                     <Button asChild>
-                        <Link href="/posts">Figma - Batch: 10</Link>
+                        <Link href="/figma4u">Figma - Batch: 10</Link>
                     </Button>
 
                     <h1 className="leading-tight">Current: 4/30</h1>
