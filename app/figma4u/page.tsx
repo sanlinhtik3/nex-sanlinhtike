@@ -1,8 +1,6 @@
 import { DataTable } from './data-table-demo';
 import Image from 'next/image';
 
-import { BellRing, Check } from "lucide-react"
-
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -37,14 +35,14 @@ const notifications = [
 type CardProps = React.ComponentProps<typeof Card>
 
 
-interface Post {
-    id: string;
-    name: string;
-    // title: string;
-    // date: string;
-    // tags: string[];
-    // content: string;
-}
+// interface Post {
+//     // id: string;
+//     // name: string;
+//     // title: string;
+//     // date: string;
+//     // tags: string[];
+//     // content: string;
+// }
 
 export default async function Home({ className, ...props }: CardProps) {
 

@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
-import * as React from "react"
-
-import { Progress } from "@/components/ui/progress"
+import { Progress } from "@/components/ui/progress";
+import { useEffect, useState } from "react";
 
 export function Free4UProgressDemo({ percentage }: { percentage?: number }) {
-    const [progress, setProgress] = React.useState(0)
+    const [progress, setProgress] = useState(0);
 
-    React.useEffect(() => {
-        const timer = setTimeout(() => setProgress(percentage || 70), 500)
-        return () => clearTimeout(timer)
-    }, [])
+    useEffect(() => {
+        const timer = setTimeout(() => setProgress(percentage || 70), 500);
+        return () => clearTimeout(timer);
+    });
 
-    return <Progress value={progress} className="w-[100%] h-1" />
+    return <Progress value={progress} className="w-[100%] h-1" />;
 }
