@@ -39,6 +39,7 @@ import {
 // import data from "./data"
 import CopyButton from "../components/CopyButton"
 import { Badge } from "@/components/ui/badge"
+import { domain } from "../domain"
 
 export type Payment = {
     id: string
@@ -187,7 +188,7 @@ export function DataTable() {
 
     // notion data
     async function getData() {
-        const res = await fetch('http://localhost:3000/api/notion', {
+        const res = await fetch(`${domain}/api/notion`, {
             cache: 'no-store'
         })
         // The return value is *not* serialized
