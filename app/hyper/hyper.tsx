@@ -21,8 +21,8 @@ export default function Hyper() {
                 {/* Right here */}
                 <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60 scrollbar-hide">
                     <IntroSection />
-                    <AboutSection />
                     <Free4U />
+                    <AboutSection />
                     <ResumeSection />
                     <ServicesSection />
                     <SkillsSection />
