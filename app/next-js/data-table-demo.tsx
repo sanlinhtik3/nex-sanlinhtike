@@ -190,7 +190,7 @@ export function DataTable() {
 
     // notion data
     async function getData() {
-        const res = await fetch(`/api/notion`, {
+        const res = await fetch(`/api/next-js`, {
             cache: 'no-store',
             next: { revalidate: 10 }
         })
