@@ -13,7 +13,7 @@ export default function ProfileSide() {
   return (
     <div className=" max-h-fit space-y-5 rounded-3xl border-slate-500 border-opacity-40 lg:border-2 lg:bg-[#0d0f18] lg:p-5">
       {/* lg:h-[calc(100vh-4rem)] */}
-      <ModeToggle />
+      {/* <ModeToggle /> */}
       <div className=" relative">
         <Avatar
           src="/sanlinhtike.png"
