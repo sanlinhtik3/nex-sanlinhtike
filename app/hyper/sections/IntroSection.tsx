@@ -23,7 +23,7 @@ export default function IntroSection() {
           Introduced
         </h6>
 
-        <h1 className="text-6xl font-bold uppercase leading-tight lg:text-8xl">
+        <h1 className="text-4xl font-bold uppercase leading-tight md:text-6xl lg:text-8xl">
           Learn Now&rsquo; Apply <span className=" text-sky-500">Future</span>
         </h1>
 

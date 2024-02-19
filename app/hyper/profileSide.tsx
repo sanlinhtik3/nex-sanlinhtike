@@ -17,7 +17,7 @@ export default function ProfileSide() {
       <div className=" relative">
         <Avatar
           src="/sanlinhtike.png"
-          className="text-large mx-auto h-40 w-40 object-fill lg:h-60  lg:w-60 "
+          className="text-large mx-auto hidden h-40 w-40 object-fill lg:flex lg:h-60 lg:w-60"
         />
         <span className=" absolute bottom-5  right-36 flex hidden items-center justify-center gap-1 rounded-full bg-green-100 px-2 text-green-500 md:right-8 lg:bottom-2 lg:right-14">
           <div className=" h-3 w-3 animate-pulse rounded-full bg-green-500"></div>
@@ -33,23 +33,32 @@ export default function ProfileSide() {
         }}
         className="space-y-5 rounded-2xl border-2 border-slate-500 border-opacity-40 bg-gray-950 p-5"
       >
-        <motion.h1
-          initial={{ x: -3, opacity: 0 }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            transition: { duration: 0.9, type: "spring", stiffness: 200 },
-          }}
-          className=" text-3xl font-bold"
-        >
-          San Lin Htike
-        </motion.h1>
-        <Link
-          href={"mailto:sanlin.htik3@gmail.com"}
-          className=" text-gray-400 hover:underline"
-        >
-          sanlin.htik3@gmail.com
-        </Link>
+        <div className="flex items-center justify-start gap-3">
+          <Avatar
+            src="/sanlinhtike.png"
+            className="text-large flex h-20 w-20 object-fill lg:hidden"
+          />
+          <div>
+            <motion.h1
+              initial={{ x: -3, opacity: 0 }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                transition: { duration: 0.9, type: "spring", stiffness: 200 },
+              }}
+              className=" text-3xl font-bold"
+            >
+              San Lin Htike
+            </motion.h1>
+            <Link
+              href={"mailto:sanlin.htik3@gmail.com"}
+              className="text-gray-400 hover:underline"
+            >
+              sanlin.htik3@gmail.com
+            </Link>
+          </div>
+        </div>
+
         <div className="">
           <h2 className=" text-gray-400">Full-stack Developer</h2>
           <h2 className=" text-gray-400">UI/UX Coding/Graphic Designer</h2>
