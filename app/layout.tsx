@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "San Lin Htike Portfolio",
+  title: "San Lin Htike | Portfolio",
   description:
     "San Lin Htike is a web designer from Myanmar who has a YouTube channel, a Behance portfolio, and a Facebook profile. I also has a GitHub account where he showcases his projects and skills. I am a professional web designer and developer. I am interested in learning new technologies such as Tailwind CSS, BFWD, and React. I has created some courses and tutorials on how to use these tools for web development. I am also a volunteer in Myanmar Red Cross and a first aid trainer. I has a lot of certificates that I received from professors. I am currently attending GUSTO University, where I am studying Computing, IoT. I am also developing Web3, Blockchain, and NFTs at The Glitch Network, a platform that connects creators, collectors, and curators of digital art and NFTs. I am a very talented and passionate web designer and developer. 😊",
 };
