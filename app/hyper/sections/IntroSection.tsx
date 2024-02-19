@@ -16,7 +16,7 @@ export default function IntroSection() {
       {/* <ThreeDCardDemo /> */}
       {/* <SparklesPreview /> */}
       {/* <TextRevealCardPreview /> */}
-      <NavbarDemo />
+      {/* <NavbarDemo /> */}
 
       <div className="!mt-10">
         <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">

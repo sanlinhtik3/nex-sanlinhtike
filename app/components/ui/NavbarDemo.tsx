@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 
 export function NavbarDemo() {
   return (
@@ -30,7 +30,7 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  grid grid-cols-2 gap-10 p-4 text-sm">
+          <div className="grid gap-10 p-4 text-sm lg:grid-cols-2">
             <ProductItem
               title="Algochurn"
               href="https://algochurn.com"

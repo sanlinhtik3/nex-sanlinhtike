@@ -11,15 +11,15 @@ import { ModeToggle } from "../dapp/mode-toggle";
 
 export default function ProfileSide() {
   return (
-    <div className=" max-h-fit space-y-5 rounded-3xl border-2 border-slate-500 border-opacity-40 p-5 lg:bg-[#0d0f18]">
+    <div className=" max-h-fit space-y-5 rounded-3xl border-slate-500 border-opacity-40 lg:border-2 lg:bg-[#0d0f18] lg:p-5">
       {/* lg:h-[calc(100vh-4rem)] */}
       <ModeToggle />
       <div className=" relative">
         <Avatar
           src="/sanlinhtike.png"
-          className="text-large mx-auto h-60 w-60  object-fill "
+          className="text-large mx-auto h-40 w-40 object-fill lg:h-60  lg:w-60 "
         />
-        <span className=" absolute  bottom-5 right-36 flex items-center justify-center gap-1 rounded-full bg-green-100 px-2 text-green-500 md:right-8 lg:bottom-2 lg:right-14">
+        <span className=" absolute bottom-5  right-36 flex hidden items-center justify-center gap-1 rounded-full bg-green-100 px-2 text-green-500 md:right-8 lg:bottom-2 lg:right-14">
           <div className=" h-3 w-3 animate-pulse rounded-full bg-green-500"></div>
           available
         </span>
