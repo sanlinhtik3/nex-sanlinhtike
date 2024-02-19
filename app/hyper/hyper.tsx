@@ -8,30 +8,32 @@ import PricingSection from "./sections/PricingSection";
 import Cryptocurrency from "./sections/Cryptocurrency";
 import DesignPackageSection from "./sections/DesignPackageSection";
 import Free4U from "./sections/free4u";
+import { CardHoverEffectDemo } from "../components/ui/CardHoverEffectDemo";
 
 export default function Hyper() {
-    return (
-        <main className="bg-[#080a11]">
-            <div className="grid lg:grid-cols-7 text-slate-50">
-                {/* Left here */}
-                <div className="lg:col-span-2 p-7">
-                    <ProfileSide />
-                </div>
+  return (
+    <main className="dark:bg-[#080a11]">
+      <div className="grid text-slate-50 lg:grid-cols-7">
+        {/* Left here */}
+        <div className="p-7 lg:col-span-2">
+          <ProfileSide />
+        </div>
 
-                {/* Right here */}
-                <div className="lg:col-span-5 lg:overflow-y-scroll lg:h-screen p-7 lg:max-w-4xl mx-auto space-y-60 scrollbar-hide">
-                    <IntroSection />
-                    <Free4U />
-                    <AboutSection />
-                    <ResumeSection />
-                    <ServicesSection />
-                    <SkillsSection />
-                    <Cryptocurrency />
-                    <DesignPackageSection />
-                    <PricingSection />
-                    <div className="h-20"></div>
-                </div>
-            </div>
-        </main>
-    )
+        {/* Right here */}
+        <div className="scrollbar-hide mx-auto space-y-60 p-7 lg:col-span-5 lg:h-screen lg:max-w-4xl lg:overflow-y-scroll">
+          <IntroSection />
+          {/* <Free4U /> */}
+          <AboutSection />
+          <ResumeSection />
+          <ServicesSection />
+          <SkillsSection />
+          {/* <CardHoverEffectDemo /> */}
+          {/* <Cryptocurrency /> */}
+          <DesignPackageSection />
+          <PricingSection />
+          <div className="h-20"></div>
+        </div>
+      </div>
+    </main>
+  );
 }

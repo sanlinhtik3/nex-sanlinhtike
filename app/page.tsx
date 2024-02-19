@@ -1,10 +1,9 @@
-import Hyper from './hyper/hyper'
-import { myan_sans } from './fonts'
+import Hyper from "./hyper/hyper";
 
 export default function Home() {
   return (
-    <main className={myan_sans.className}>
+    <main>
       <Hyper />
-    </main >
-  )
+    </main>
+  );
 }

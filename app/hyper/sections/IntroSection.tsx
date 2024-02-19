@@ -1,61 +1,112 @@
-import Button from "@/app/components/Button"
-import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo"
-import { TabsDemo } from "@/app/demo/tabs-demo"
-import Link from "next/link"
+import Button from "@/app/components/Button";
+import { CardContainer } from "@/app/components/ui/3d-card";
+import { NavbarDemo } from "@/app/components/ui/NavbarDemo";
+import { SparklesPreview } from "@/app/components/ui/SparklesPreview";
+import { TextGenerateEffectDemo } from "@/app/components/ui/TextGenerateEffectDemo";
+import { TextRevealCardPreview } from "@/app/components/ui/TextRevealCardPreview";
+import { ThreeDCardDemo } from "@/app/components/ui/ThreeDCardDemo";
+import { TypewriterEffectSmoothDemo } from "@/app/components/ui/TypewriterEffectSmoothDemo";
+import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo";
+import { TabsDemo } from "@/app/demo/tabs-demo";
+import Link from "next/link";
 
 export default function IntroSection() {
-    return (
-        <>
-            <div className="!mt-10">
-                <h6 className="uppercase border p-2 inline-block mb-20 text-xs text-left rounded-lg">Introduced</h6>
-                <h1 className="text-6xl lg:text-8xl leading-tight font-bold uppercase">Learn Now&rsquo; Apply <span className=" text-sky-500">Future</span></h1>
+  return (
+    <>
+      {/* <ThreeDCardDemo /> */}
+      {/* <SparklesPreview /> */}
+      {/* <TextRevealCardPreview /> */}
+      <NavbarDemo />
 
-                <p className=" leading-10 text-gray-400 mb-10 max-w-lg text-2xl">
-                    အချိန်တိုတိုဖြင့် ပိုမိုထိရောက်တဲ့ Web App တစ်ခုတည်ဆောက်မလား? ဒါမှမဟုတ် မိမိသား သမီး/လူငယ်များ အတွက် <span className=" text-gray-100">Web Development</span> ဖြင့် အသက်မွေးဝမ်းကြောင်းကို ပို့ဆောင်ပေးမလား? Ready to let&apos;s go?
-                </p>
+      <div className="!mt-10">
+        <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
+          Introduced
+        </h6>
 
-                <div className="flex flex-col lg:flex-row gap-5 mb-10">
-                    <Link href={"https://drive.google.com/file/d/1oU2Hatb-xP89gL4zEsLzA6Gf7e9b7dxK/view?usp=sharing"} className=" inline-block" target="_blank">
-                        <Button className="w-full bg-transparent border-2 !bg-sky-500 border-sky-500" name="Download CV" />
-                    </Link>
-                    <DropdownMenuDemo />
+        <h1 className="text-6xl font-bold uppercase leading-tight lg:text-8xl">
+          Learn Now&rsquo; Apply <span className=" text-sky-500">Future</span>
+        </h1>
 
-                </div>
+        <div className="mb-10">
+          <TextGenerateEffectDemo />
+        </div>
 
-                <div className="grid lg:grid-cols-2 gap-5 bg-[#0d0e18] p-5 lg:p-10 rounded-xl mb-10">
-                    <div className="">
-                        <h6 className=" text-6xl text-sky-500 font-bold">5+</h6>
-                        <h6 className="text-lg font-bold">Years of Experience</h6>
-                        <p className="text-gray-400 text-sm">Contact and start your <span className=" text-slate-200">business/learn</span> journey now</p>
-                    </div>
-                    <div className="">
-                        <h6 className=" text-6xl text-sky-500 font-bold">80+</h6>
-                        <h6 className="text-lg font-bold">Projects completed</h6>
-                        <p className="text-gray-400 text-sm">Utilise, Flexibility, Scalability ,Compatibility </p>
-                    </div>
-                </div>
+        {/* <p className=" mb-10 max-w-lg text-2xl leading-10 text-gray-400">
+          Build a more efficient Web App in less time? Or lead a career with Web
+          Development for your children/young people? Ready to let's go?
+        </p> */}
 
-                <div className="bg-[#0d0e18] p-5 lg:p-10 rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-5">
-                    <h1 className=" lg:col-span-2 text-3xl lg:text-4xl font-bold">Learn</h1>
-                    <Link href={"https://learn-sanlinhtike.vercel.app/"} className="space-y-5 bg-gray-950 p-3 rounded-2xl hover:bg-gray-900 transform transition-colors duration-200">
-                        <h1 className=" text-3xl lg:text-4xl font-medium">Learn With Online Book</h1>
-                        <h1>Learn Your Career Path</h1>
-                        <p className="text-gray-400">
-                            <span className=" text-white">Web Development</span> ကို အချိန်တိုတိုနှင့် စနစ်တကျလေ့လာချင်သူများအတွက် ဒီ Learn Page ကို develope လုပ်ထားခြစ်တယ်။ JavaScript, Git, Github, Tailwindcss, React, Next.js သင်ခန်းစာများကို Online Learn Book စနစ်ဖြင့် လေ့လာရမှာပါ။ Click ပြီးလေ့လာကြည့်ပါ။
-                        </p>
-                    </Link>
-                    <Link href={"https://www.youtube.com/@SanLinHtike"} className=" space-y-5 bg-gray-950 p-3 rounded-2xl hover:bg-gray-900 transform transition-colors duration-200">
-                        <h1 className=" text-3xl lg:text-4xl font-medium">Learn on YouTube</h1>
-                        <h1>Learn Your Career Path</h1>
-                        <p className="text-gray-400">
-                            <span className=" text-white">HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React</span> စတဲ့သင်ခန်းစာများကို Newly on Expert ဖြစ်အောင် ဒီ YouTube Channel က မိတ်ဆွေတို့ကို ကူညီပေးပါလိမ့်မယ်။ အပြင်မှာ သင်တန်းတက်တဲ့အတိုင်းလေ့လာရမှာဖြစ်ပြီး Up to Date ဖြစ်တဲ့ Library, Framework Version ဖြစ့်လေ့လာရမှာပါ။
-                        </p>
-                    </Link>
-                    <div className="lg:col-span-2">
-                        <TabsDemo />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+        <div className="mb-10 flex flex-col gap-5 lg:flex-row">
+          <Link
+            href={
+              "https://drive.google.com/file/d/1oU2Hatb-xP89gL4zEsLzA6Gf7e9b7dxK/view?usp=sharing"
+            }
+            className=" inline-block"
+            target="_blank"
+          >
+            <Button
+              className="w-full border-2 border-sky-500 !bg-sky-500 bg-transparent"
+              name="Download CV"
+            />
+          </Link>
+          <DropdownMenuDemo />
+        </div>
+
+        <div className="mb-10 grid gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
+          <div className="">
+            <h6 className=" text-6xl font-bold text-sky-500">5+</h6>
+            <h6 className="text-lg font-bold">Years of Experience</h6>
+            <p className="text-sm text-gray-400">
+              Contact and start your{" "}
+              <span className=" text-slate-200">business/learn</span> journey
+              now
+            </p>
+          </div>
+          <div className="">
+            <h6 className=" text-6xl font-bold text-sky-500">80+</h6>
+            <h6 className="text-lg font-bold">Projects completed</h6>
+            <p className="text-sm text-gray-400">
+              Utilise, Flexibility, Scalability ,Compatibility{" "}
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
+          <Link
+            href={"https://learn-sanlinhtike.vercel.app/"}
+            className="transform space-y-5 rounded-2xl bg-gray-950 p-3 transition-colors duration-200 hover:bg-gray-900 "
+          >
+            <h1 className=" text-3xl font-medium lg:text-4xl">Online Book</h1>
+            <h1>Learn Your Career Path</h1>
+            <p className="text-gray-400">
+              This Learn Page has been developed for those who want to learn{" "}
+              <span className=" text-white">Web Development</span> in a short
+              time and systematically. You will learn JavaScript, Git, Github,
+              Tailwindcss, React, Next.js lessons through the Online Learn Book
+              system. Click and learn.
+            </p>
+          </Link>
+          <Link
+            href={"https://www.youtube.com/@SanLinHtike"}
+            className=" transform space-y-5 rounded-2xl bg-gray-950 p-3 transition-colors duration-200 hover:bg-gray-900"
+          >
+            <h1 className=" text-3xl font-medium lg:text-4xl">YouTube</h1>
+            <h1>Learn Your Career Path</h1>
+            <p className="text-gray-400">
+              This YouTube Channel will help you become a Newly on Expert in
+              <span className=" text-white">
+                HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React
+              </span>
+              lessons. Outside, you will have to study as you attend the course,
+              and you will have to study with an up-to-date library and
+              framework version.
+            </p>
+          </Link>
+        </div>
+        <div className="mt-10 lg:col-span-2">
+          <TabsDemo />
+        </div>
+      </div>
+    </>
+  );
 }
