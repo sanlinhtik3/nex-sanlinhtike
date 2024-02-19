@@ -1,5 +1,6 @@
 import Button from "@/app/components/Button";
 import { CardContainer } from "@/app/components/ui/3d-card";
+import { MovingBorderDemo } from "@/app/components/ui/MovingBorderDemo";
 import { NavbarDemo } from "@/app/components/ui/NavbarDemo";
 import { SparklesPreview } from "@/app/components/ui/SparklesPreview";
 import { TextGenerateEffectDemo } from "@/app/components/ui/TextGenerateEffectDemo";
@@ -44,12 +45,19 @@ export default function IntroSection() {
             className=" inline-block"
             target="_blank"
           >
-            <Button
-              className="w-full border-2 border-sky-500 !bg-sky-500 bg-transparent"
-              name="Download CV"
+            <MovingBorderDemo content="Download CV" />
+          </Link>
+          <Link
+            href={"mailto:sanlin.htik3@gmail.com"}
+            className=" inline-block"
+            target="_blank"
+          >
+            <MovingBorderDemo
+              content="Send Email"
+              className="!bg-transparent"
             />
           </Link>
-          <DropdownMenuDemo />
+          {/* <DropdownMenuDemo /> */}
         </div>
 
         <div className="mb-10 grid gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
