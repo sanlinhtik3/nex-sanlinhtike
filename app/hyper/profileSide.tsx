@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import MotionDiv from "../components/motion-dev";
 import { ModeToggle } from "../dapp/mode-toggle";
+import { MovingBorderDemo } from "../components/ui/MovingBorderDemo";
 
 export default function ProfileSide() {
   return (
@@ -99,7 +100,12 @@ export default function ProfileSide() {
           className=" inline-block w-full"
           target="_blank"
         >
-          <Button className="w-full whitespace-nowrap" name="Hire Me!" />
+          <MovingBorderDemo
+            content="Hire Me!"
+            className="!w-full"
+            containerClassName="w-full"
+          />
+          {/* <Button className="w-full whitespace-nowrap" name="Hire Me!" /> */}
         </Link>
         {/* <Link href={"/dapp"} className=" inline-block" target="_blank">
                     <TButton className="w-full py-6 rounded-xl"><span className=" text-green-500 mr-1">Buy</span>/ <span className=" text-red-500 ml-1 mr-2">Sell </span> Crypto</TButton>
