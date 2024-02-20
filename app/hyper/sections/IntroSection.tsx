@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/app/components/Button";
 import { CardContainer } from "@/app/components/ui/3d-card";
 import { MovingBorderDemo } from "@/app/components/ui/MovingBorderDemo";
@@ -6,10 +8,31 @@ import { SparklesPreview } from "@/app/components/ui/SparklesPreview";
 import { TextGenerateEffectDemo } from "@/app/components/ui/TextGenerateEffectDemo";
 import { TextRevealCardPreview } from "@/app/components/ui/TextRevealCardPreview";
 import { ThreeDCardDemo } from "@/app/components/ui/ThreeDCardDemo";
+import { ThreeDCardProfile } from "@/app/components/ui/ThreeDCardProfile";
 import { TypewriterEffectSmoothDemo } from "@/app/components/ui/TypewriterEffectSmoothDemo";
+import { HoverEffect } from "@/app/components/ui/card-hover-effect";
 import { DropdownMenuDemo } from "@/app/demo/DropdownMenuDemo";
 import { TabsDemo } from "@/app/demo/tabs-demo";
+import { motion } from "framer-motion";
 import Link from "next/link";
+
+export const projects = [
+  {
+    title: "Online Book",
+    description: `This Learn Page has been developed for those who want to learn
+      Web Development in a short
+      time and systematically. You will learn JavaScript, Git, Github,
+      Tailwindcss, React, Next.js lessons through the Online Learn Book
+      system. Click and learn.`,
+    link: "https://learn-sanlinhtike.vercel.app/",
+  },
+  {
+    title: "YouTube",
+    description:
+      "This YouTube Channel will help you become a Newly on Expert in HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React lessons.Outside, you will have to study as you attend the course, and you will have to study with an up- to - date library and framework version.",
+    link: "https://www.youtube.com/@SanLinHtike",
+  },
+];
 
 export default function IntroSection() {
   return (
@@ -18,6 +41,7 @@ export default function IntroSection() {
       {/* <SparklesPreview /> */}
       {/* <TextRevealCardPreview /> */}
       {/* <NavbarDemo /> */}
+      {/* <ThreeDCardProfile /> */}
 
       <div className="!mt-10">
         <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
@@ -45,7 +69,7 @@ export default function IntroSection() {
             className=" inline-block"
             target="_blank"
           >
-            <MovingBorderDemo content="Download CV" />
+            <MovingBorderDemo content="Download CV" className="!bg-black" />
           </Link>
           <Link
             href={"mailto:sanlin.htik3@gmail.com"}
@@ -60,7 +84,23 @@ export default function IntroSection() {
           {/* <DropdownMenuDemo /> */}
         </div>
 
-        <div className="mb-10 grid gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 500, damping: 20 }}
+          initial={{ opacity: 0, y: 20, scale: 0.6 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: {
+              type: "spring",
+              stiffness: 260,
+              damping: 10,
+            },
+          }}
+          exit={{ opacity: 0, y: 20, scale: 0.6 }}
+          className="grid gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 p-5 lg:grid-cols-2 lg:p-10 dark:bg-black"
+        >
           <div className="">
             <h6 className=" text-6xl font-bold text-sky-500">5+</h6>
             <h6 className="text-lg font-bold">Years of Experience</h6>
@@ -77,9 +117,11 @@ export default function IntroSection() {
               Utilise, Flexibility, Scalability ,Compatibility{" "}
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
+        <HoverEffect items={projects} />
+
+        {/* <div className="grid grid-cols-1 gap-5 rounded-3xl border-2 border-slate-500 border-opacity-40 bg-[#0d0e18] p-5 lg:grid-cols-2 lg:p-10">
           <Link
             href={"https://learn-sanlinhtike.vercel.app/"}
             className="transform space-y-5 rounded-2xl bg-gray-950 p-3 transition-colors duration-200 hover:bg-gray-900 "
@@ -110,7 +152,7 @@ export default function IntroSection() {
               framework version.
             </p>
           </Link>
-        </div>
+        </div> */}
         <div className="mt-10 lg:col-span-2">
           <TabsDemo />
         </div>

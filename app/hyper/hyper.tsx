@@ -12,7 +12,7 @@ import { CardHoverEffectDemo } from "../components/ui/CardHoverEffectDemo";
 
 export default function Hyper() {
   return (
-    <main className="dark:bg-[#080a11]">
+    <main className="dark:bg-black">
       <div className="grid text-slate-50 lg:grid-cols-7">
         {/* Left here */}
         <div className="p-7 lg:col-span-2">
@@ -20,7 +20,7 @@ export default function Hyper() {
         </div>
 
         {/* Right here */}
-        <div className="scrollbar-hide mx-auto space-y-60 p-7 lg:col-span-5 lg:h-screen lg:max-w-4xl lg:overflow-y-scroll">
+        <div className="scrollbar-hide mx-auto space-y-60 overflow-visible p-7 px-36 lg:col-span-5 lg:h-screen">
           <IntroSection />
           {/* <Free4U /> */}
           <AboutSection />

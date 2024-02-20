@@ -12,7 +12,7 @@ import { MovingBorderDemo } from "../components/ui/MovingBorderDemo";
 
 export default function ProfileSide() {
   return (
-    <div className=" max-h-fit space-y-5 rounded-3xl border-slate-500 border-opacity-40 lg:border-2 lg:bg-[#0d0f18] lg:p-5">
+    <div className=" max-h-fit space-y-5 rounded-3xl border-slate-500 border-opacity-40 lg:border-2 lg:p-5 dark:lg:bg-black">
       {/* lg:h-[calc(100vh-4rem)] */}
       {/* <ModeToggle /> */}
       <div className=" relative">
@@ -32,7 +32,7 @@ export default function ProfileSide() {
           opacity: 1,
           transition: { duration: 0.3, type: "spring", stiffness: 200 },
         }}
-        className="space-y-5 rounded-2xl border-2 border-slate-500 border-opacity-40 bg-gray-950 p-5"
+        className="space-y-5 rounded-2xl border-2 border-slate-500 border-opacity-40 p-5 dark:bg-black"
       >
         <div className="flex items-center justify-start gap-3">
           <Avatar
@@ -73,7 +73,7 @@ export default function ProfileSide() {
           opacity: 1,
           transition: { duration: 0.3, type: "spring", stiffness: 900 },
         }}
-        className="flex flex-wrap gap-2 rounded-2xl border-2 border-slate-500 border-opacity-40 bg-slate-950 p-5"
+        className="flex flex-wrap gap-2 rounded-2xl border-2 border-slate-500 border-opacity-40 p-5 dark:bg-black"
       >
         {[
           "Next.js",
@@ -86,7 +86,7 @@ export default function ProfileSide() {
         ].map((professional) => (
           <Badge
             key={professional}
-            className=" bg-slate-800 text-white hover:bg-slate-800 hover:opacity-80"
+            className=" bg-slate-800 font-normal text-white hover:bg-slate-800 hover:opacity-80"
           >
             {professional}
           </Badge>
@@ -102,7 +102,7 @@ export default function ProfileSide() {
         >
           <MovingBorderDemo
             content="Hire Me!"
-            className="!w-full"
+            className="!bg-black"
             containerClassName="w-full"
           />
           {/* <Button className="w-full whitespace-nowrap" name="Hire Me!" /> */}
