@@ -30,7 +30,7 @@ export default function Hyper() {
           {/* <CardHoverEffectDemo /> */}
           {/* <Cryptocurrency /> */}
           <DesignPackageSection />
-          <PricingSection />
+          {/* <PricingSection /> */}
           <div className="h-20"></div>
         </div>
       </div>
