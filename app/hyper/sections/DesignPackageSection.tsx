@@ -199,7 +199,7 @@ export default function DesignPackageSection() {
         <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
           Design Package
         </h6>
-        <h1 className=" text-6xl leading-tight">
+        <h1 className=" text-6xl font-bold leading-tight">
           Hyper <span className="text-sky-400">Design Package</span>
         </h1>
         <h1 className=" text-base leading-tight">
@@ -210,7 +210,7 @@ export default function DesignPackageSection() {
 
         <div className="grid gap-5 lg:grid-cols-2">
           {packages.map((pack: any) => (
-            <Card className="rounded-3xl bg-black">
+            <Card key={pack.title} className="rounded-3xl bg-black">
               <CardHeader className=" space-y-5">
                 <CardDescription>{pack.title}</CardDescription>
                 <div>

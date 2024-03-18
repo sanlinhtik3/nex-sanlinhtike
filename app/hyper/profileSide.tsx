@@ -25,6 +25,9 @@ export default function ProfileSide() {
           available
         </span>
       </div>
+
+      <ModeToggle />
+
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{
@@ -47,7 +50,7 @@ export default function ProfileSide() {
                 opacity: 1,
                 transition: { duration: 0.9, type: "spring", stiffness: 200 },
               }}
-              className=" text-3xl font-bold"
+              className="text-3xl font-bold"
             >
               San Lin Htike
             </motion.h1>

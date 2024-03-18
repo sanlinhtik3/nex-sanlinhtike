@@ -5,7 +5,7 @@ export default function AboutSection() {
         <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
           About
         </h6>
-        <h1 className=" text-6xl leading-tight">
+        <h1 className=" text-6xl font-bold leading-tight">
           Every grade design begin with an event{" "}
           <span className="text-sky-400">better story</span>
         </h1>
