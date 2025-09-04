@@ -18,15 +18,6 @@ import Link from "next/link";
 
 export const projects = [
   {
-    title: "Online Book",
-    description: `This Learn Page has been developed for those who want to learn
-      Web Development in a short
-      time and systematically. You will learn JavaScript, Git, Github,
-      Tailwindcss, React, Next.js lessons through the Online Learn Book
-      system. Click and learn.`,
-    link: "https://learn-sanlinhtike.vercel.app/",
-  },
-  {
     title: "YouTube",
     description:
       "This YouTube Channel will help you become a Newly on Expert in HTML, CSS, JavaScript, Bootstrap, Tailwindcss, React lessons.Outside, you will have to study as you attend the course, and you will have to study with an up- to - date library and framework version.",
@@ -49,6 +40,15 @@ export const projects = [
     description:
       "This Facebook Page will help you become a Crypto Expert in Binance, Real Time Crypto News and more.",
     link: "https://facebook.com/realzoedevcrypto",
+  },
+  {
+    title: "Online Book",
+    description: `This Learn Page has been developed for those who want to learn
+      Web Development in a short
+      time and systematically. You will learn JavaScript, Git, Github,
+      Tailwindcss, React, Next.js lessons through the Online Learn Book
+      system. Click and learn.`,
+    link: "https://learn-sanlinhtike.vercel.app/",
   },
 ];
 
