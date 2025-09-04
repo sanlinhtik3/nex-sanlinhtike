@@ -27,7 +27,7 @@ export const projects = [
     title: "Telegram",
     description:
       "This Telegram Channel will help you become a Crypto Expert in Binance, Real Time Crypto News, DeFi, NFT, GameFi, SocialFi, Metaverse, and more.",
-    link: "t.me/zoecryptofree",
+    link: "https://t.me/zoecryptofree",
   },
   {
     title: "TikTok",
