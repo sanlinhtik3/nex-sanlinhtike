@@ -1,62 +1,81 @@
+import { MotionCard, MotionItem, MotionList, Reveal } from "@/app/components/Reveal";
+import { Layers3, MousePointerClick, PenTool, Smartphone } from "lucide-react";
+
+const services = [
+  {
+    name: "Mobile App UI/UX",
+    description:
+      "iOS and iPadOS flows, onboarding, empty states, settings, forms, and interaction states designed for real device use.",
+    projects: "Mobile",
+    icon: Smartphone,
+  },
+  {
+    name: "Desktop Product Design",
+    description:
+      "macOS and web dashboard interfaces with clear hierarchy, dense but readable layouts, and efficient task flows.",
+    projects: "Desktop",
+    icon: Layers3,
+  },
+  {
+    name: "Wireframes and Prototypes",
+    description:
+      "Low-fidelity exploration, clickable prototypes, and user-flow validation before investing in polished UI.",
+    projects: "Prototype",
+    icon: MousePointerClick,
+  },
+  {
+    name: "Design Systems",
+    description:
+      "Reusable components, visual rules, responsive behavior, and handoff details that make implementation cleaner.",
+    projects: "System",
+    icon: PenTool,
+  },
+];
+
 export default function ServicesSection() {
-  const services = [
-    {
-      name: "Fontend Web Design",
-      description:
-        "Modren's UI will be bright and colorful. Different UI Designs will be available quickly in a short period of time. Because it is coding, you will get designs that are flexible, scalable, and compactable so that you can modify them whenever you like.",
-      image:
-        "https://static.mocortech.com/mxc-web-community/static/images/learn/title-image.svg",
-      projects: "10",
-    },
-    {
-      name: "Graphic UI/UX Design",
-      description:
-        "Before writing an App or Web App, the Prototype is ready to upgrade your friends' UI/UX with the latest tools and updated Design.",
-      image:
-        "https://static.mocortech.com/mxc-web-community/static/images/learn/title-image.svg",
-      projects: "30",
-    },
-  ];
-
   return (
-    <>
-      <div className="">
-        <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
-          Services
-        </h6>
-        <h1 className=" mb-10 text-4xl font-bold leading-tight lg:text-6xl">
-          My <span className="text-sky-500">specializations</span>
-        </h1>
-
-        <p className=" hidden leading-10 text-gray-400">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
-          animi quia earum! Praesentium omnis nostrum incidunt
+    <section className="space-y-10">
+      <Reveal>
+        <p className="inline-flex rounded-lg border border-slate-300 bg-white px-3 py-2 text-left text-xs font-medium uppercase tracking-wide text-slate-600 shadow-sm dark:border-slate-700 dark:bg-black dark:text-slate-300">
+          Specializations
         </p>
+      </Reveal>
+      <Reveal>
+        <h2 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+          UI/UX work that covers the full product surface.
+        </h2>
+        <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-gray-400">
+          From first flow to final component, each deliverable is shaped around
+          clarity, usability, and platform-appropriate behavior.
+        </p>
+      </Reveal>
 
-        <div className=" space-y-10">
-          {services.map((data, index) => (
-            <div
-              key={index}
-              className=" group space-y-10 rounded-2xl border border-gray-800 p-10 transition duration-150 hover:border-sky-500"
-            >
-              <div className="space-y-2">
-                <div className="flex items-start justify-between">
-                  <h4 className=" text-3xl font-bold transition duration-150 group-hover:text-sky-400">
-                    {data?.name}
-                  </h4>
-                  <div className=" h-5 w-5 group-hover:bg-sky-400"></div>
+      <MotionList className="grid gap-5 sm:grid-cols-2">
+        {services.map((data) => {
+          const Icon = data.icon;
+
+          return (
+            <MotionItem key={data.name}>
+              <MotionCard className="group h-full rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-150 hover:border-sky-500 dark:border-gray-800 dark:bg-black">
+                <div className="mb-8 flex items-center justify-between">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-400 transition group-hover:bg-sky-500/20">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <span className="rounded-full border border-slate-200 px-3 py-1 text-xs uppercase text-slate-500 transition group-hover:border-sky-500 group-hover:text-sky-600 dark:border-slate-800 dark:text-gray-400 dark:group-hover:text-sky-300">
+                    {data.projects}
+                  </span>
                 </div>
-                <p className=" leading-loose text-gray-400">
-                  {data?.description}
+                <h3 className="text-2xl font-bold transition duration-150 group-hover:text-sky-400">
+                  {data.name}
+                </h3>
+                <p className="mt-4 leading-7 text-slate-600 dark:text-gray-400">
+                  {data.description}
                 </p>
-              </div>
-              <div className=" uppercase text-gray-300 transition duration-150 group-hover:text-sky-500 group-hover:underline">
-                {data?.projects} Projects
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
+              </MotionCard>
+            </MotionItem>
+          );
+        })}
+      </MotionList>
+    </section>
   );
 }

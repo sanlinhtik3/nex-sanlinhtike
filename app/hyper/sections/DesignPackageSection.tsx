@@ -1,252 +1,90 @@
+import { MotionCard, MotionItem, MotionList, Reveal } from "@/app/components/Reveal";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { clsx } from "@nextui-org/shared-utils";
-import { Check, CheckCircle2, Send } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail } from "lucide-react";
 import Link from "next/link";
 
-const packages = [
-  {
-    id: 1,
-    title: "Landing",
-    subtitle: "Pause or cancel anytime",
-    price: "$100",
-    link: {
-      name: "Browsw",
-      active: false,
-      href: "https://m.me/5anlinhtike",
-    },
-    description: "Let's build your business with a single page",
-    avaiable: [
-      {
-        title: "Will receive a Domain",
-      },
-      {
-        title: "6 Section Content",
-      },
-      {
-        title: "Responsive Web Design(Mobile, Tablet, Desktop)",
-      },
-      {
-        title:
-          "Flexible UI/UX Design, Compatible with All Devices, Scalable, DeX",
-      },
-      {
-        title: "Training, Support, and Guidance",
-      },
-      {
-        title: "React / Next.js / Tailwind CSS code",
-      },
-      {
-        title: "Design + Development",
-      },
-      {
-        title: "24-hour support response time",
-      },
-      {
-        title: "Private communication channel",
-      },
-      {
-        title: "Pause or cancel anytime",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "SMEs(Recommend)",
-    subtitle: "Pause or cancel anytime",
-    price: "$199",
-    link: {
-      name: "Touch",
-      active: true,
-      href: "https://m.me/5anlinhtike",
-    },
-    description:
-      "Your Super Web App that will gain the trust of its product that automatically earns a lot of profit",
-    avaiable: [
-      {
-        title: "Will receive a Domain",
-      },
-      {
-        title: "9+ Pages",
-      },
-      {
-        title: "Responsive Web Design(Mobile, Tablet, Desktop)",
-      },
-      {
-        title:
-          "Flexible UI/UX Design, Compatible with All Devices, Scalable, DeX",
-      },
-      {
-        title: "Training, Support, and Guidance",
-      },
-      {
-        title: "React / Next.js / Tailwind CSS code",
-      },
-      {
-        title: "Design + Development",
-      },
-      {
-        title: "24-hour support response time",
-      },
-      {
-        title: "Private communication channel",
-      },
-      {
-        title: "Pause or cancel anytime",
-      },
-    ],
-  },
+const deliverables = [
+  "Product audit and UX recommendations",
+  "User flow and information architecture",
+  "Wireframes for key screens",
+  "High-fidelity UI for mobile, tablet, desktop, or web",
+  "Clickable Figma prototype",
+  "Design system notes and developer handoff",
 ];
 
-const notifications = [
-  {
-    title: "Will receive a Domain",
-    description: "1 hour ago",
-  },
-  {
-    title: "6 Section Content",
-    description: "1 hour ago",
-  },
-  {
-    title: "Responsive Web Design(Mobile, Tablet, Desktop)",
-    description: "2 hours ago",
-  },
-  {
-    title: "Flexible UI/UX Design, Compatible with All Devices, Scalable, DeX",
-    description: "2 hours ago",
-  },
-  {
-    title: "Training, Support, and Guidance",
-    description: "2 hours ago",
-  },
-  {
-    title: "React / Next.js / Tailwind CSS code",
-    description: "2 hours ago",
-  },
-  {
-    title: "Design + Development",
-    description: "2 hours ago",
-  },
-  {
-    title: "24-hour support response time",
-    description: "2 hours ago",
-  },
-  {
-    title: "Private communication channel",
-    description: "2 hours ago",
-  },
-  {
-    title: "Pause or cancel anytime",
-    description: "2 hours ago",
-  },
-];
-
-const smes = [
-  {
-    title: "Will receive a Domain",
-    description: "1 hour ago",
-  },
-  {
-    title: "9+ Pages",
-    description: "1 hour ago",
-  },
-  {
-    title: "Responsive Web Design(Mobile, Tablet, Desktop)",
-    description: "2 hours ago",
-  },
-  {
-    title: "Flexible UI/UX Design, Compatible with All Devices, Scalable, DeX",
-    description: "2 hours ago",
-  },
-  {
-    title: "Training, Support, and Guidance",
-    description: "2 hours ago",
-  },
-  {
-    title: "React / Next.js / Tailwind CSS code",
-    description: "2 hours ago",
-  },
-  {
-    title: "Design + Development",
-    description: "2 hours ago",
-  },
-  {
-    title: "24-hour support response time",
-    description: "2 hours ago",
-  },
-  {
-    title: "Private communication channel",
-    description: "2 hours ago",
-  },
-  {
-    title: "Pause or cancel anytime",
-    description: "2 hours ago",
-  },
+const fit = [
+  "You are building a new app and need the first usable experience.",
+  "Your existing product feels cluttered and needs clearer structure.",
+  "You need polished UI screens before development starts.",
 ];
 
 export default function DesignPackageSection() {
   return (
-    <>
-      <div className=" space-y-16">
-        <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
-          Design Package
-        </h6>
-        <h1 className=" text-6xl font-bold leading-tight">
-          Hyper <span className="text-sky-400">Design Package</span>
-        </h1>
-        <h1 className=" text-base leading-tight">
-          Your <span className="text-sky-400">super employee</span> who will
-          earn a lot of profit and work automatically without the need for
-          additional employees{" "}
-        </h1>
+    <Reveal className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950/60">
+      <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_0.8fr] lg:p-10">
+        <div>
+          <p className="mb-6 inline-flex rounded-lg border border-slate-300 bg-white px-3 py-2 text-left text-xs font-medium uppercase tracking-wide text-slate-600 shadow-sm dark:border-slate-700 dark:bg-black dark:text-slate-300">
+            Contact
+          </p>
+          <h2 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            Need a clearer UI/UX direction for your product?
+          </h2>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-gray-400">
+            Send the product idea, current screens, or rough feature list. I can
+            help turn it into a focused experience that looks good and works
+            well across Apple devices and responsive web.
+          </p>
 
-        <div className="grid gap-5 lg:grid-cols-2">
-          {packages.map((pack: any) => (
-            <Card key={pack.title} className="rounded-3xl bg-black">
-              <CardHeader className=" space-y-5">
-                <CardDescription>{pack.title}</CardDescription>
-                <div>
-                  <CardDescription>{pack.subtitle}</CardDescription>
-                  <CardTitle>{pack.price}</CardTitle>
-                </div>
-                <CardDescription>{pack.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className=" mt-5">
-                  {pack.avaiable.map((notification: any, index: number) => (
-                    <div
-                      key={index}
-                      className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
-                    >
-                      <CheckCircle2 className="h-4 w-4" />
-                      <div className="space-y-1">
-                        <p className="text-sm font-medium leading-none">
-                          {notification.title}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button className={clsx("w-full", {})} asChild>
-                  <Link href={pack.link.href}>
-                    <Send className="mr-2 h-4 w-4" /> {pack.link.name}
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <Button asChild className="min-h-12 rounded-2xl px-6">
+              <Link href="mailto:sanlin.htik3@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Email me
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="min-h-12 rounded-2xl border-slate-300 bg-transparent px-6 text-slate-900 hover:bg-slate-100 dark:border-slate-700 dark:text-white dark:hover:bg-slate-900"
+            >
+              <Link
+                href="https://www.linkedin.com/in/san-lin-htike-544041191"
+                target="_blank"
+              >
+                LinkedIn
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <MotionCard className="rounded-3xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-black/40">
+            <h3 className="text-xl font-bold">Typical deliverables</h3>
+            <MotionList className="mt-5 space-y-4">
+              {deliverables.map((item) => (
+                <MotionItem key={item}>
+                  <div className="grid grid-cols-[24px_1fr] items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-sky-400" />
+                    <p className="text-sm leading-6 text-slate-700 dark:text-gray-300">{item}</p>
+                  </div>
+                </MotionItem>
+              ))}
+            </MotionList>
+          </MotionCard>
+
+          <MotionCard className="rounded-3xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-black/40">
+            <h3 className="text-xl font-bold">Best fit</h3>
+            <div className="mt-5 space-y-4">
+              {fit.map((item) => (
+                <p key={item} className="text-sm leading-6 text-slate-600 dark:text-gray-400">
+                  {item}
+                </p>
+              ))}
+            </div>
+          </MotionCard>
         </div>
       </div>
-    </>
+    </Reveal>
   );
 }

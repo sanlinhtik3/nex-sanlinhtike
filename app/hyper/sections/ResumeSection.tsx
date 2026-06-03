@@ -1,43 +1,47 @@
+import { MotionCard, MotionItem, MotionList, Reveal } from "@/app/components/Reveal";
 import { Badge } from "@/components/ui/badge";
-import { CalendarRange, Check, CheckCircle, Hammer } from "lucide-react";
+import { CalendarRange, CheckCircle, Hammer } from "lucide-react";
 
 const data = [
   {
-    id: "32re932d3",
+    id: "experience-2023",
     year: "2023 - Present",
     experience_lists: [
       {
-        id: "323jewer",
+        id: "build-myanmar",
         company: "Build Myanmar",
-        position: "Full-stack Web Developer",
+        position: "Freelance UI/UX and Product Designer",
         employment_status: "Freelance",
-        year: "",
         status: "ongoing",
-        start_end: "From Nov 13th, 2023 to Present",
+        start_end: "Nov 2023 - Present",
+        description:
+          "Designing responsive product flows, landing experiences, and UI systems for small business and learning products.",
       },
       {
-        id: "3r43r4wer",
-        company: "Anonymous",
-        position: "React Developer",
+        id: "anonymous-product",
+        company: "Private Client",
+        position: "Product Interface Designer",
         employment_status: "Freelance",
-        year: "",
-        status: "winner",
-        start_end: "From May 4th, 2023 to present",
+        status: "completed",
+        start_end: "May 2023 - Present",
+        description:
+          "Created wireframes, polished screens, and implementation-ready layouts for web app experiences.",
       },
     ],
   },
   {
-    id: "32re932d3",
+    id: "experience-2022",
     year: "2022 - 2023",
     experience_lists: [
       {
-        id: "43f3jewer",
+        id: "asia-royal",
         company: "Asia Royal",
-        position: "React Developer",
+        position: "Frontend UI Designer",
         employment_status: "Virtual",
-        year: "",
-        status: "winner",
-        start_end: "From Feb 5th, 2022 to 2023 Mar 25th",
+        status: "completed",
+        start_end: "Feb 2022 - Mar 2023",
+        description:
+          "Worked on interface layouts, component styling, and responsive UI decisions for React-based products.",
       },
     ],
   },
@@ -45,46 +49,60 @@ const data = [
 
 export default function ResumeSection() {
   return (
-    <div className="space-y-16">
-      <h6 className="mb-20 inline-block rounded-lg border p-2 text-left text-xs uppercase">
-        Resume
-      </h6>
-      <h1 className=" mb-10 text-6xl font-bold leading-tight">Experience</h1>
+    <section className="space-y-10">
+      <Reveal>
+        <p className="inline-flex rounded-lg border border-slate-300 bg-white px-3 py-2 text-left text-xs font-medium uppercase tracking-wide text-slate-600 shadow-sm dark:border-slate-700 dark:bg-black dark:text-slate-300">
+          Experience
+        </p>
+      </Reveal>
+      <Reveal>
+        <h2 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+          Product design experience with build-ready thinking.
+        </h2>
+      </Reveal>
 
-      <ol className="relative space-y-16 border-l border-gray-200 dark:border-gray-700">
+      <MotionList className="relative space-y-12 border-l border-slate-200 dark:border-gray-800">
         {data.map((data) => (
-          <li key={data.id} className="mb-10 ml-6 space-y-10">
-            <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full  ring-8 ring-white dark:bg-gray-500 dark:ring-gray-900">
-              <CalendarRange className="h-2.5 w-2.5" />
-            </span>
-            <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-400">
-              {data.year}
-            </h3>
-            {data.experience_lists.map((experience) => (
-              <div key={experience.id} className="">
-                <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  {experience.start_end}
-                </time>
-                <h5 className="mb-2 flex items-center gap-2 text-2xl">
-                  {experience.position}{" "}
-                  <Badge>{experience.employment_status}</Badge>{" "}
-                  <Badge variant="outline">
-                    {experience.status === "ongoing" ? (
-                      <Hammer className="mr-1 w-3" />
-                    ) : (
-                      <CheckCircle className="mr-1 w-3" />
-                    )}
-                    {experience.status}
-                  </Badge>
-                </h5>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  {experience.company}
-                </p>
-              </div>
-            ))}
-          </li>
+          <MotionItem key={data.id}>
+            <div className="ml-6 space-y-8">
+              <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 ring-8 ring-slate-50 dark:bg-gray-800 dark:ring-black">
+                <CalendarRange className="h-3 w-3" />
+              </span>
+              <h3 className="text-lg font-semibold text-slate-500 dark:text-gray-400">
+                {data.year}
+              </h3>
+              {data.experience_lists.map((experience) => (
+                <MotionCard
+                  key={experience.id}
+                  className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-950/40"
+                >
+                  <time className="mb-3 block text-sm font-normal leading-none text-slate-500 dark:text-gray-500">
+                    {experience.start_end}
+                  </time>
+                  <h4 className="mb-3 flex flex-wrap items-center gap-2 text-xl font-bold sm:text-2xl">
+                    {experience.position}
+                    <Badge>{experience.employment_status}</Badge>
+                    <Badge variant="outline">
+                      {experience.status === "ongoing" ? (
+                        <Hammer className="mr-1 w-3" />
+                      ) : (
+                        <CheckCircle className="mr-1 w-3" />
+                      )}
+                      {experience.status}
+                    </Badge>
+                  </h4>
+                  <p className="text-base font-normal text-slate-600 dark:text-gray-400">
+                    {experience.company}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-500 dark:text-gray-500">
+                    {experience.description}
+                  </p>
+                </MotionCard>
+              ))}
+            </div>
+          </MotionItem>
         ))}
-      </ol>
-    </div>
+      </MotionList>
+    </section>
   );
 }
